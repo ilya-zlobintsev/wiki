@@ -37,6 +37,5 @@ jobs:
         id: deployment
         with:
           token: "${{ github.token }}"
-          target_url: http://my-app-url.com
-          environment: production
-          ref: "${{ github.ref }}"
+          target_url: "http://my-app-url.com/${{ github.ref }}"
+          environment: dev-preview
