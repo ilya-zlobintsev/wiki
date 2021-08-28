@@ -39,3 +39,4 @@ jobs:
           token: "${{ github.token }}"
           target_url: http://my-app-url.com
           environment: production
+          ref: "${{ github.ref }}"
